@@ -1577,7 +1577,7 @@ RT   2026 OUT
 
     <div class="abs s6-sub an rise" style="--dy:10px">限量週邊、快閃展、投稿計畫的實體展出——<br>十年的慶祝，不只在線上。</div>
 
-    <a class="abs s6-cta an rise" href="#" style="--dy:10px"><b>了解更多週邊活動</b><em>&#8594;</em></a>
+    <a class="abs s6-cta an rise" href="https://www.backbone.tw/pages/2026-10th" target="_blank" rel="noopener" style="--dy:10px"><b>了解更多週邊活動</b><em>&#8594;</em></a>
 
     <div class="abs s6-rule an rise" style="--dy:6px"><i></i></div>
 
@@ -1942,7 +1942,7 @@ addEventListener('mousemove', e => {
       el.innerHTML = '<i>「</i>' + line.replace(/[<>&]/g, '') + '<i>」</i><em>' + who.replace(/[<>&]/g, '') + '</em>';
       field.appendChild(el); items.push(el); row.x += est + 28 + rnd() * 40;
     });
-  }).catch(() => { placed = 718; });   // 離線預覽用的範例數字
+  }).catch(() => { placed = 5; });     // 抓不到徵件站時的後備數字（請跟實際數字對齊）
   new IntersectionObserver((es, obs) => {
     es.forEach(e => {
       if (!e.isIntersecting) return;
