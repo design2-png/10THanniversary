@@ -2144,6 +2144,13 @@ addEventListener('scroll', () => {
     nav.appendChild(a);
     links[sec.id] = a;
   });
+  /* 最後一個：回 Backbone 官方商城（開新分頁） */
+  const shopA = document.createElement('a');
+  shopA.className = 'ext';
+  shopA.href = 'https://www.backbone.tw/';
+  shopA.target = '_blank'; shopA.rel = 'noopener';
+  shopA.innerHTML = '<span>官方商城 &#8599;</span><i></i>';
+  nav.appendChild(shopA);
   document.body.appendChild(nav);
 
   let queued = false;
